@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">GitExcercise</string>
+    <string name="lable_login_activity">Login Activity</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="error_credential_invalid">Credential Invalid</string>
+    <string name="info_login_success">Login Success</string>
+    <string name="button_forgot_password">Forgot Password?</string>
+    <string name="button_create_account">Create New Account</string>
+    <string name="lable_registration_activity">Registration Activity</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="action_register">Register</string>
+    <string name="error_field_empty_password_mismatch">Error: Either Field Empty or Password not match</string>
+    <string name="info_registered_successfully">Registered Successfully</string>
+    <string name="action_send">Send</string>
+    <string name="hint_registered_email">Registered Email</string>
+    <string name="lable_forgot_password">Forgot Password</string>
 </resources>
