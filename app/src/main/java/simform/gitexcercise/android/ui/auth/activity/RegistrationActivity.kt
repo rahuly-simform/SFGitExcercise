@@ -1,9 +1,11 @@
 package simform.gitexcercise.android.ui.auth.activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import simform.gitexcercise.android.R
 import simform.gitexcercise.android.databinding.ActivityRegistrationBinding
+import simform.gitexcercise.android.ui.profile.activity.ProfileActivity
 import simform.gitexcercise.android.utils.FakeCredentials.updateCredential
 import simform.gitexcercise.android.utils.showToast
 
@@ -33,6 +35,7 @@ class RegistrationActivity : AppCompatActivity() {
                 && !confirmPassword.isNullOrEmpty() &&
                 confirmPassword.toString() == password.toString()) {
                 updateCredential(email.toString(), password.toString())
+                startActivity(Intent(this@RegistrationActivity, ProfileActivity::class.java))
                 showToast(this@RegistrationActivity,
                     getString(R.string.info_registered_successfully))
             } else {

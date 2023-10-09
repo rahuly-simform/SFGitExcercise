@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import simform.gitexcercise.android.R
 import simform.gitexcercise.android.databinding.ActivityLoginBinding
+import simform.gitexcercise.android.ui.profile.activity.ProfileActivity
 import simform.gitexcercise.android.utils.FakeCredentials.defaultMail
 import simform.gitexcercise.android.utils.FakeCredentials.defaultPassword
 import simform.gitexcercise.android.utils.showToast
@@ -27,6 +28,7 @@ class LoginActivity : AppCompatActivity() {
             buttonLogin.setOnClickListener {
                 if (editTextEmail.text.toString() == defaultMail
                     && editTextPassword.text.toString() == defaultPassword) {
+                    startActivity(Intent(this@LoginActivity, ProfileActivity::class.java))
                     showToast(this@LoginActivity, getString(R.string.info_login_success))
                 } else {
                     showToast(this@LoginActivity,
