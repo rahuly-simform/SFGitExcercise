@@ -21,4 +21,7 @@
     <string name="title_email">Email</string>
     <string name="email_test">test@test.com</string>
     <string name="button_edit_profile">Edit Profile</string>
+    <string name="action_save">Save</string>
+    <string name="hint_new_name">New Name</string>
+    <string name="lable_edit_profile">Edit Profile</string>
 </resources>
